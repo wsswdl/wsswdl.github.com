@@ -1,0 +1,6 @@
+markdown: rdiscount
+permalink: /:year/:month/:title/
+url: http://geeklu.com
+author: wsswdl
+pygments: true
+paginate: 24
