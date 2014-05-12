@@ -126,7 +126,7 @@ Please don't use any `<blink>` tags.
 
 ![image](images.jpg "Optional title")
 
-![image](/images.jpg "qqqqqqqqqqq")
+![image](http://static.open-open.com/news/uploadImg/20140404/20140404213006_159.png "qqqqqqqqqqq")
 
 ![image](/d/software/jekyll/gh-pages/wsswdl.github.com/_posts/images.jpg "wwwwwwwww")
 {% include references.md %}
