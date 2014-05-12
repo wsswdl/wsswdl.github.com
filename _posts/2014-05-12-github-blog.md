@@ -116,4 +116,12 @@ _single underscores_
 
 __double underscores__
 
+Use the printf() function.
+Use the `printf()` function.
+A single backtick in a code span: `` ` ``
+
+A backtick-delimited string in a code span: `` `foo` ``
+
+Please don't use any `<blink>` tags.
+
 {% include references.md %}
