@@ -124,4 +124,6 @@ A backtick-delimited string in a code span: `` `foo` ``
 
 Please don't use any `<blink>` tags.
 
+![Alt text](/image.jpg "Optional title")
+
 {% include references.md %}
