@@ -1,6 +1,6 @@
 ---
 layout: list
-title:  Ì½Ë÷ÌìµØ
+title:  Default category
 ---
 
 {% assign list = site.categories.default %}

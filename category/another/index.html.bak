@@ -1,8 +1,8 @@
 ---
 layout: list
-title:  Ì½Ë÷ÌìµØ
+title:  Another category
 ---
 
-{% assign list = site.categories.default %}
+{% assign list = site.categories.another %}
 {% assign preview = true %}
 {% include list.tpl %}
