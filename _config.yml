@@ -10,8 +10,8 @@ desc: 小试一下
 
 custom:
     category:
-        default: Default Category
-        another: Another Category
+        default: 项目总结
+        another: 探索天地
     categories:
       - name:  default
         title: 项目总结
@@ -28,7 +28,7 @@ meta:
         disqus: wsswdl.disqus.com                   # Disqus缩略标识
         gcse: 000346898720731947188:13h55x32l0y     # Google自定义搜索标识ID
         github: wsswdl                              # GitHub账号
-        gravatar: 7C314334ABD04D7CA3AC2C483EAD0722  # Gravatar头像标识
+        gravatar: ABD04D7CA3AC2C48                  # Gravatar头像标识
 
     disqus: disqus.com/embed.js                     # Disqus评论的JS地址
     gapi: http://www.google.com/jsapi               # Google API地址
