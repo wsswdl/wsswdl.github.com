@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Java自定义Annotation
-categories:
-- Programming
+category: default
 tags:
 - Java
 - Annotation
