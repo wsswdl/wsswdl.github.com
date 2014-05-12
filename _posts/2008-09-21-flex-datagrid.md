@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Flex之DataGrid
-categories:
-- Programming
+category: another
 tags:
 - Flex
 - Adobe
