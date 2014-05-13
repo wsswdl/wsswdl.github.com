@@ -77,9 +77,8 @@ Google Analytics Tracking ID：搜索引擎抓取关键字.
 
 我们耐心的等待10分钟，然后便可以愉快的看看我们的个人博客了[wsswdl.github.com/blog](http://wsswdl.github.com/blog "wsswdl的个人博客")。
 
-<!-- more -->
 
-这是一个普通段落。
+这是一个普通段落。<!-- more -->
 
 <table>
     <tr>
