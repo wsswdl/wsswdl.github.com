@@ -6,11 +6,12 @@
 	{% include meta.tpl %}
 	<div class="article-content">
 	{% if forloop.index == 1 and preview and post.layout == 'post' %}
-		{{ post.content | split:"<!-- more -->" | first | strip_html | truncate:300 }}
+		{{ post.content}}
+	{% endif %}
+	{{ post.content | split:"<!-- more -->" | first | strip_html | truncate:300 }}
 		{% if post.content | size > 300 %}
 			 <strong>Read more</strong>
 		{% endif %}
-	{% endif %}
 	</div>
 </article>
 {% endfor %}
