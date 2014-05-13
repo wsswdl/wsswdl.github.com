@@ -128,5 +128,5 @@ Please don't use any `<blink>` tags.
 
 ![image](http://static.open-open.com/news/uploadImg/20140404/20140404213006_159.png "qqqqqqqqqqq")
 
-![image](/d/software/jekyll/gh-pages/wsswdl.github.com/_posts/image.png "wwwwwwwww")
+![image](D:\software\jekyll\gh-pages\wsswdl.github.com\_posts\image.png "wwwwwwwww")
 {% include references.md %}
