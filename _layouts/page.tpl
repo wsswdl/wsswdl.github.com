@@ -42,8 +42,11 @@
 		</figure>
 		<p>我要做技术大牛</p>
 	</div>
-	
-	<EMBED src="http://service.weibo.com/staticjs/weiboshow.swf" wmode="transparent" quality="high" width="400" height="500" align="L" scale="noborder" flashvars="verifier=aad3531f&uid=2764507394&width=400&height=500&fansRow=2&isTitle=1&isWeibo=1&isFans=1&noborder=0&ptype=1&colors=fcf4b1,fffef4,444444,9f8c40" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></EMBED>
+
+	<div class="block weibo">
+		<iframe id="sina_widget_2764507394" style="width:100%; height:500px;" frameborder="0" scrolling="no" src="http://v.t.sina.com.cn/widget/widget_blog.php?uid=2764507394&height=500&skin=wd_01&showpic=1">
+		</iframe>
+	</div>
 <!--
 	<!-- JiaThis Button BEGIN -->
 	<div class="jiathis_style">
