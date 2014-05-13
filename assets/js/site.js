@@ -8,9 +8,9 @@
 
 var site = {
 	InitMap: {
-		list: function () {
-			site.VAR_AUTO_LOAD_ON_SCROLL && elf(window).on('scroll', site.Handlers.scrolling);
-		},
+	//	list: function () {
+	//		site.VAR_AUTO_LOAD_ON_SCROLL && elf(window).on('scroll', site.Handlers.scrolling);
+	//	},
 		
 		post: function () {
 			var disqusUrl = site.URL_DISCUS_COMMENT;
