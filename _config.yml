@@ -10,14 +10,18 @@ desc: 小试一下
 
 custom:
     category:
-        default: 项目总结
-        another: 探索天地
+        zongjie: 项目总结
+        tansuo: 探索天地
+	ganxiang: 感想
     categories:
-      - name:  default
+      - name:  zongjie
         title: 项目总结
 
-      - name:  another
+      - name:  tansuo
         title: 探索天地
+
+      - name:  ganxiang
+        title: 感想
 
     scrollingLoadCount: 2                          # 滚屏自动加载文章数量，“0”为关闭
 
