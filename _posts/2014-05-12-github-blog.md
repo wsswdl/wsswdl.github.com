@@ -20,6 +20,58 @@ category: default
 
 ###7.上传代码，生成自己的博客##
 
+####1.注册git账号##
+打开[github](https://github.com/ "github官网")官网，注册一个账号，将我们自己的代码托管在github上。
+
+注册该站点有两个目的:
+
+    托管我们的开源项目;
+
+    在上面建个静态博客吧。
+
+####2.创建一个项目##
+
+注册好我们自己的github账号后，就可以开始创建属于自己的静态博客了，点击右上角的用户名。如图：
+
+![image](/image/create_repo/1.png )
+
+进入下一个页面后，首先点击左边红框中的Repositories选项卡，然后点击右边红框的“New”，如下图：
+
+![image](/image/create_repo/2.png )
+
+进入下一页，填写我们的项目名称,描述信息等。当然，你还可以选择你的项目协议，是否开源之类的，然后点击“Create Repository”,如图：
+
+![image](/image/create_repo/3.png )
+
+接下来点击右边的扳手（setting）图标，出现新页面后点击“Automatic Page Generator”，如图：
+
+![image](/image/create_repo/4.png )
+
+我们看到跳转的页面:
+
+Project Name:网站标题;
+
+Tagline：网站副标题；
+
+Body：这个就是网页源码了；
+
+Google Analytics Tracking ID：搜索引擎抓取关键字.
+
+这些你都可以自定义。
+
+定义好后，点击" Continue to Layouts"。如图：
+
+![image](/image/create_repo/5.png )
+
+选定一个主题，点击“publish”，这样就生成了自己的博客网站。
+
+![image](/image/create_repo/6.png )
+
+不过此时不能直接访问自己的网站，你会看到这个
+
+![image](/image/create_repo/7.png )
+
+我们耐心的等待10分钟，然后便可以愉快的看看我们的个人博客了[wsswdl.github.com/blog](http://wsswdl.github.com/blog "wsswdl的个人博客")。
 
 这是一个普通段落。
 
