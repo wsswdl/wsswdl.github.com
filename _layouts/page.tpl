@@ -25,7 +25,7 @@
 </div>
 
 <aside>
-	<h2><a href="/">{{ site.name }}</a><a href="/feed.xml" class="feed-link" title="Subscribe"><i class="fa fa-rss-square"></i></a></h2>
+	<h1><a href="/">{{ site.name }}</a><a href="/feed.xml" class="feed-link" title="Subscribe"><i class="fa fa-rss-square"></i></a></h1>
 	
 	<nav class="block">
 		<ul>
