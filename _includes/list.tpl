@@ -5,7 +5,7 @@
 	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 	{% include meta.tpl %}
 	<div class="article-content">
-	{% if preview and post.layout == 'post' %}
+	{% if post.layout == 'post' %}
 		{{ post.content | split:"<!-- more -->" | first | strip_html | truncate:300 }}
 		{% if post.content | size > 300 %}
 			 <strong>Read more</strong>
