@@ -6,10 +6,14 @@
 	{% include meta.tpl %}
 	<div class="article-content">
 	{% if forloop.index == 1 and preview and post.layout == 'post' %}
-		{{ post.content | split:"<!-- more -->" | first | strip_html | truncate:300 }}
-		{% if post.content | size > 300 %}
-			<strong>Read more</strong>
-		{% endif %}
+		<div class="post-content-truncate">
+			{% if post.content contains "<!-- more -->" %}
+				{{ post.content | split:"<!-- more -->" | first % }}
+			{% else %}
+			{{ post.content | strip_html | truncatewords:100 }}
+			{% endif %}
+		</div>
+		{{ post.content }}
 	{% endif %}
 	</div>
 </article>
