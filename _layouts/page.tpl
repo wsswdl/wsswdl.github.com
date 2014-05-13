@@ -44,8 +44,7 @@
 	</div>
 
 	<div class="block weibo">
-		<iframe id="sina_widget_2764507394" style="width:100%; height:500px;" frameborder="0" scrolling="no" src="http://v.t.sina.com.cn/widget/widget_blog.php?uid=2764507394&height=500&skin=wd_01&showpic=1">
-		</iframe>
+		<iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=2764507394&verifier=aad3531f&dpc=1"></iframe>
 	</div>
 <!--
 	<!-- JiaThis Button BEGIN -->
