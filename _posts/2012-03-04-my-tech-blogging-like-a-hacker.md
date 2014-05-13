@@ -31,7 +31,7 @@ category: another
 * [Gravatar]统一头像标识服务
 * ……
 
-<!-- more -->
+  <!-- more -->
 
 感谢这个有云的时代！可以让我们通过一件件简单的工具打造属于每个程序员自己的站点，[像黑客一样写博客](http://kyle.xlau.org/posts/blogging-like-a-hacker.html)（原文：[Blogging Like a Hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html)）。于是我可以把精力只放在文章的内容上，这一定会更有效率。
 

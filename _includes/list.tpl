@@ -6,9 +6,10 @@
 	{% include meta.tpl %}
 	<div class="article-content">
 	{% if post.layout == 'post' %}
-		{{ post.content | split:"<!-- more -->" | first | strip_html | truncate:300 }}
-		{% if post.content | size > 300 %}
-			 <strong>Read more</strong>
+		{% if post.content contains "<!-- more -->" %}
+			{{ post.content | split:"<!-- more -->" | first % }}
+		{% else %}
+			{{ post.content | strip_html | truncatewords:100 }}
 		{% endif %}
 	{% endif %}
 	
