@@ -38,6 +38,8 @@ category: default
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 > id sem consectetuer libero luctus adipiscing.
 
+<!--more-->
+
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
@@ -124,9 +126,8 @@ A backtick-delimited string in a code span: `` `foo` ``
 
 Please don't use any `<blink>` tags.
 
-![image](/assets/image.png "Optional title")
+![image](/image/image.png "Optional title")
 
 ![image](http://static.open-open.com/news/uploadImg/20140404/20140404213006_159.png "qqqqqqqqqqq")
 
-![image](/assets/image.png "wwwwwwwww")
 {% include references.md %}
