@@ -124,9 +124,9 @@ A backtick-delimited string in a code span: `` `foo` ``
 
 Please don't use any `<blink>` tags.
 
-![image](images.jpg "Optional title")
+![image](image.png "Optional title")
 
 ![image](http://static.open-open.com/news/uploadImg/20140404/20140404213006_159.png "qqqqqqqqqqq")
 
-![image](/d/software/jekyll/gh-pages/wsswdl.github.com/_posts/images.jpg "wwwwwwwww")
+![image](/d/software/jekyll/gh-pages/wsswdl.github.com/_posts/image.png "wwwwwwwww")
 {% include references.md %}
