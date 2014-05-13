@@ -13,7 +13,6 @@
 			{{ post.content | strip_html | truncatewords:100 }}
 			{% endif %}
 		</div>
-		{{ post.content }}
 	{% endif %}
 	</div>
 </article>
