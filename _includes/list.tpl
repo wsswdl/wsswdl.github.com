@@ -6,15 +6,7 @@
 	{% include meta.tpl %}
 	<div class="article-content">
 	{% if post.layout == 'post' %}
-		{% if post.content contains "<!-- more -->" %}
-			{{ post.content | split:"<!-- more -->" | first | strip_html | truncate:300 }}
-			{% if post.content | size > 300 %}
-				<strong>Read more</strong>
-			{% endif %}
-		{% else %}
-			{{ post.content | strip_html | truncate:300 }}
-		{% endif %}
-		
+		<p>wdl</p>
 	{% endif %}
 	
 	</div>
