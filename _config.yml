@@ -12,7 +12,7 @@ custom:
     category:
         zongjie: 项目总结
         tansuo: 探索天地
-	ganxiang: 感想
+        ganxiang: 感想
 
     categories:
       - name:  zongjie
@@ -22,7 +22,7 @@ custom:
         title: 探索天地
 
       - name: ganxiang
-	title: 感想
+        title: 感想
 
 
     scrollingLoadCount: 2                          # 滚屏自动加载文章数量，“0”为关闭
