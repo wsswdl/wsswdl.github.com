@@ -33,7 +33,7 @@
 		{% endfor %}
 		</ul>
 	</nav>
-	
+	<!--
 	<div class="block block-about">
 		<h3>About</h3>
 		<figure>
@@ -42,9 +42,9 @@
 		</figure>
 		<p>我要做技术大牛</p>
 	</div>
-
+	-->
 	<div class="block weibo">
-		<iframe width="100%" height="400" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=400&fansRow=2&ptype=0&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=2764507394&verifier=aad3531f&colors=d6f3f7,eeeeee,666666,0082cb,ecfbfd&dpc=1"></iframe>
+		<iframe width="100%" height="400" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=400&fansRow=2&ptype=1&speed=300&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=2764507394&verifier=aad3531f&colors=d6f3f7,eeeeee,666666,0082cb,ecfbfd&dpc=1"></iframe>
 	</div>
 
 	<!-- JiaThis Button BEGIN -->
