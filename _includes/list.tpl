@@ -6,7 +6,10 @@
 	{% include meta.tpl %}
 	<div class="article-content">
 	{% if post.layout == 'post' %}
-		<p>wdl</p>
+		{{ post.content | split:"<!-- more -->" | first | strip_html | truncate:300 }}
+			{% if post.content | size > 300 %}
+				<a href="{{ post.url }}"><strong>Read more</strong></a>
+			{% endif %}
 	{% endif %}
 	
 	</div>
