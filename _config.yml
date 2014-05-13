@@ -39,3 +39,16 @@ meta:
     disqus: disqus.com/embed.js                     # Disqus评论的JS地址
     gapi: http://www.google.com/jsapi               # Google API地址
     gravatar: http://en.gravatar.com/avatar/        # Gravatar头像服务器地址
+
+
+default_asides: [/_includes/weibo.html]
+ 
+ 
+# Weibo
+# Please refer to http://weibo.com/tool/weiboshow to get your uid and verifier. 
+weibo_uid: 2764507394
+weibo_verifier: aad3531f
+weibo_fansline: 0   # 粉丝显示多少行
+weibo_show: true    # 是否显示最近微博内容
+weibo_pic: true     # 是否显示微博中的图片
+weibo_skin: 10      # 使用哪种配色风格，数字为从1开始的微博秀风格序号
