@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在github上搭建个人博客
-category: default
+category: zongjie
 ---
 
 #文章内容

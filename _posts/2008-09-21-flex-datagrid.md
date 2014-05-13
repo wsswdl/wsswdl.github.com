@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Flex之DataGrid
-category: another
+category: tansuo
 tags:
 - Flex
 - Adobe
