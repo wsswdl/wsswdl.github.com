@@ -34,11 +34,6 @@
 		</ul>
 	</nav>
 	
-	<form action="/search/" class="block block-search">
-		<h3>Search</h3>
-		<p><input type="search" name="q" placeholder="Search" /></p>
-	</form>
-	
 	<div class="block block-about">
 		<h3>About</h3>
 		<figure>
@@ -48,8 +43,8 @@
 		<p>我要做技术大牛</p>
 	</div>
 	
-	<iframe id="sina_widget_2764507394" style="width:100%; height:500px;" frameborder="0" scrolling="no" src="http://v.t.sina.com.cn/widget/widget_blog.php?uid=2764507394&height=500&skin=wd_01&showpic=1"></iframe>
-
+	<EMBED src="http://service.weibo.com/staticjs/weiboshow.swf" wmode="transparent" quality="high" width="230" height="500" align="L" scale="noborder" flashvars="verifier=aad3531f&uid=2764507394&width=230&height=500&fansRow=2&isTitle=1&isWeibo=1&isFans=1&noborder=0&ptype=1&colors=cfe1f3,fafcff,444444,5093d5" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></EMBED>
+<!--
 	<!-- JiaThis Button BEGIN -->
 	<div class="jiathis_style">
 		<a class="jiathis_button_qzone"></a>
@@ -62,7 +57,7 @@
 	</div>
 	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1376318876580714" charset="utf-8"></script>
 	<!-- JiaThis Button END -->
-
+-->
 	<div class="block block-license">
 		<h3>Copyright</h3>
 		<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.5/cn/" target="_blank" class="hide-target-icon" title="Copyright declaration of site content"><img alt="知识共享许可协议" src="http://i.creativecommons.org/l/by-nc-nd/2.5/cn/88x31.png" /></a></p>
