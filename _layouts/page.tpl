@@ -53,6 +53,10 @@
 	</div>
 	{% endif %}
 
+	<div id="back-top">
+		<a href="#top" title="回到顶部"></a>
+	</div>
+
 </aside>
 
 <script src="http://elfjs.qiniudn.com/code/elf-0.5.0.min.js"></script>
