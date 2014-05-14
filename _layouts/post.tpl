@@ -13,6 +13,7 @@ pageClass: page-type-post
 	{% include meta.tpl %}
 	{{ content }}
 	{% capture permaurl %}http://{{site.host}}{{ page.url }}{% endcapture %}
+	<span id="bshare-shareto">分享到</span>
 	<!-- JiaThis Button BEGIN -->
 	<div class="jiathis_style">
 		<span id="bshare-shareto">分享到</span>
