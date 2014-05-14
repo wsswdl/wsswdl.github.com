@@ -128,7 +128,7 @@ elf(function () {
 $("#back-top").hide();
 $(document).ready(function () {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 200) {
       $('#back-top').fadeIn();
     } else {
       $('#back-top').fadeOut();
