@@ -54,7 +54,8 @@
 	{% endif %}
 
 	<div id="back-top">
-		<a href="#top" title="回到顶部"></a>
+		<a title="回到顶部"></a>
+		<!-- <a href="#top" title="回到顶部"></a>  -->
 	</div>
 
 </aside>
