@@ -12,7 +12,7 @@
 			{% endif %}
 
 	{% endif %}
-	{% if page.title %}
+	{% if page.title==null %}
 		<!-- JiaThis Button BEGIN -->
 		<div class="jiathis_style">
 		<a class="jiathis_button_qzone"></a>
