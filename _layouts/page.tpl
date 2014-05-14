@@ -61,7 +61,7 @@
 
 <script src="http://elfjs.qiniudn.com/code/elf-0.5.0.min.js"></script>
 <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
 
 <script src="/assets/js/site.js"></script>
 
