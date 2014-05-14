@@ -60,6 +60,12 @@
 	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1376318876580714" charset="utf-8"></script>
 	<!-- JiaThis Button END -->
 
+	{% if site.meta.author.github %}
+	<div class="block block-fork">
+		<a href="https://github.com/{{ site.meta.author.github }}"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+	</div>
+	{% endif %}
+
 </aside>
 
 <script src="http://elfjs.qiniudn.com/code/elf-0.5.0.min.js"></script>
