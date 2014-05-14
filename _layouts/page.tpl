@@ -64,8 +64,8 @@
 <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
 
-<script type="text/javascript" src="assete/js/jquery.js"></script>
-<script type="text/javascript" src="assete/js/js.js"></script>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/js.js"></script>
 
 <script src="/assets/js/site.js"></script>
 
