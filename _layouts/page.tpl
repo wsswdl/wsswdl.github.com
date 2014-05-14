@@ -47,19 +47,6 @@
 		<iframe width="100%" height="75" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=75&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=0&isFans=0&uid=2764507394&verifier=aad3531f&colors=d6f3f7,eeeeee,666666,0082cb,ecfbfd&dpc=1"></iframe>
 	</div>
 
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<a class="jiathis_button_qzone"></a>
-		<a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_tqq"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_renren"></a>
-		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-		<a class="jiathis_counter_style"></a>
-	</div>
-	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1376318876580714" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-
 	{% if site.meta.author.github %}
 	<div class="block block-fork">
 		<a href="https://github.com/{{ site.meta.author.github }}"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>

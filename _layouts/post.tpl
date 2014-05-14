@@ -15,6 +15,7 @@ pageClass: page-type-post
 	{% capture permaurl %}http://{{site.host}}{{ page.url }}{% endcapture %}
 	<!-- JiaThis Button BEGIN -->
 	<div class="jiathis_style">
+		<span id="bshare-shareto">分享到</span>
 		<a class="jiathis_button_qzone"></a>
 		<a class="jiathis_button_tsina"></a>
 		<a class="jiathis_button_tqq"></a>
