@@ -123,6 +123,7 @@ article .gist .line-data{min-width: 100%;}
 #back-top {
   position: fixed;
   bottom: 30px;
+  left:80px;
 }
 #back-top a {
   width: 54px;
