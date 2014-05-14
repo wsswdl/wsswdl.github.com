@@ -4,11 +4,6 @@ layout: page
 pageClass: page-type-post
 
 ---
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
-<link rel="stylesheet" type="text/css" href="/assets/css/site.css" />
-<link rel="stylesheet" type="text/css" href="/assets/css/code/github.css" />
-{% for style in page.styles %}<link rel="stylesheet" type="text/css" href="{{ style }}" />
-{% endfor %}
 
 <div class="trace">/ <a href="/">{{ site.name }}</a> / {{ page.title }}</div>
 
@@ -18,10 +13,6 @@ pageClass: page-type-post
 	{% include meta.tpl %}
 	{{ content }}
 	{% capture permaurl %}http://{{site.host}}{{ page.url }}{% endcapture %}
-
-	<div id="back-top">
-		<a href="#top" title="回到顶部"></a>
-	</div>
 
 	<h6>分享到</h6>
 	<!-- JiaThis Button BEGIN -->
