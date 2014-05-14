@@ -58,6 +58,12 @@
 		<a href="#top" title="回到顶部"></a> 
 	</div>
 
+	<!-- 代码开始 -->
+	<div id="code"></div>
+	<div id="code_img"></div>
+	<a id="gotop" href="javascript:void(0)"></a>
+	<!-- 代码结束 -->
+
 </aside>
 
 <script src="http://elfjs.qiniudn.com/code/elf-0.5.0.min.js"></script>
