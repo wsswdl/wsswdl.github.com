@@ -142,7 +142,7 @@ $(document).ready(function () {
   });
 });
 */
-
+/*
 $(document).ready(function(){
 //Ê×ÏÈ½«#back-to-topÒþ²Ø
  $("#back-top").hide();
@@ -164,3 +164,4 @@ return false;
 });
 });
 });
+*/
