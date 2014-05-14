@@ -9,8 +9,7 @@
 		{{ post.content | split:"<!-- more -->" | first | strip_html | truncate:300 }}
 			{% if post.content | size > 300 %}
 				<a href="{{ post.url }}"><strong>Read more</strong></a>
-			{% endif %}
-			<!-- JiaThis Button BEGIN -->
+							<!-- JiaThis Button BEGIN -->
 	<div class="jiathis_style">
 		<a class="jiathis_button_qzone"></a>
 		<a class="jiathis_button_tsina"></a>
@@ -22,6 +21,8 @@
 	</div>
 	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1376318876580714" charset="utf-8"></script>
 	<!-- JiaThis Button END -->
+
+			{% endif %}
 
 	{% endif %}
 	
