@@ -55,7 +55,7 @@ aside .block-about figcaption:after{content:'<308769907@qq.com>'; padding-left:.
 aside .block-about:hover figcaption:after{opacity: 1;}
 aside .block-fork{position: absolute; top:0; right:0; margin: 0;}
 
-aside .block-weibo iframe{position:fixed; bottom:350px; cursor:pointer; }
+aside .block-weibo iframe{position: fixed; bottom: 50px; cursor: pointer; right: 20px; }
 
 footer p{color:#aaa; font-size:75%; line-height:1.6em;}
 
