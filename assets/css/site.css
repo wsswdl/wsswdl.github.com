@@ -68,7 +68,7 @@ footer p{color:#aaa; font-size:75%; line-height:1.6em;}
 
 .trace{font-size:80%; color:#999;}
 
-article{margin:2em 0;font-size:90%;}
+article{margin:2em 0;font-size:100%;color:#000000}
 article>h1:first-child{margin:0;}
 article h1,
 article h2,
