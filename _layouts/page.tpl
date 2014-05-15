@@ -34,12 +34,12 @@
 		{% endfor %}
 		</ul>
 	</nav>
-<!--
+
 	<form action="/search/" class="block block-search">
 		<h3>Search</h3>
 		<p><input type="search" name="q" placeholder="Search" /></p>
 	</form>
--->
+<!--
 	<div class="search">
 	<script>
 		(function() {
@@ -55,6 +55,7 @@
 	</script>
 	<gcse:search></gcse:search>
 	</div>
+	-->
 	<!--
 	<div class="block block-about">
 		<h3>About</h3>
@@ -66,7 +67,7 @@
 	</div>
 -->
 	<div class="block weibo">
-		<iframe width="100%" height="75" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=75&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=0&isFans=0&uid=2764507394&verifier=aad3531f&colors=d6f3f7,eeeeee,666666,0082cb,ecfbfd&dpc=1"></iframe>
+		<iframe position: "absolute"  top: "110"  right: "50" width="100%" height="75" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=75&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=0&isFans=0&uid=2764507394&verifier=aad3531f&colors=d6f3f7,eeeeee,666666,0082cb,ecfbfd&dpc=1"></iframe>
 	</div>
 
 	{% if site.meta.author.github %}
