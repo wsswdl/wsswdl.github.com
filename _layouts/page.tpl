@@ -91,10 +91,10 @@
 <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
 
-<script type="text/javascript" src="assets/js/jquery.js"></script>
-<script type="text/javascript" src="assets/js/js.js"></script>
+<script type="text/javascript" src="http://wsswdl.github.io/assets/js/jquery.js"></script>
+<script type="text/javascript" src="http://wsswdl.github.io/assets/js/js.js"></script>
 
-<script src="/assets/js/site.js"></script>
+<script src="http://wsswdl.github.io/assets/js/site.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
