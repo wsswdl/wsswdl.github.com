@@ -34,12 +34,27 @@
 		{% endfor %}
 		</ul>
 	</nav>
-
+<!--
 	<form action="/search/" class="block block-search">
 		<h3>Search</h3>
 		<p><input type="search" name="q" placeholder="Search" /></p>
 	</form>
-
+-->
+	<div class="search">
+	<script>
+		(function() {
+		var cx = '010515384149699179799:j7uzkiigcai';
+		var gcse = document.createElement('script');
+		gcse.type = 'text/javascript';
+		gcse.async = true;
+		gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+		 '//www.google.com/cse/cse.js?cx=' + cx;
+		var s = document.getElementsByTagName('script')[0];
+		 s.parentNode.insertBefore(gcse, s);
+		 })();
+	</script>
+	<gcse:search></gcse:search>
+	</div>
 	<!--
 	<div class="block block-about">
 		<h3>About</h3>
