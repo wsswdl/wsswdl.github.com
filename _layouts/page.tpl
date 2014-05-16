@@ -21,7 +21,7 @@
 	{{ content }}
 
 	<footer>
-		<p>&copy; Since 2014</p>
+		<p>Copyright ©2014 wsswdl</p>
 	</footer>
 </div>
 

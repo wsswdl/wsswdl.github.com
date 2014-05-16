@@ -98,7 +98,7 @@ Google Analytics Tracking ID：搜索引擎抓取关键字.
 
 ![image](/image/create_repo/10.png )
 
-如果我们收到了邮件的验证通知，说明我们成功了，接下来连接到我们的项目。
+如果我们收到了邮件的验证通知，说明我们成功了。
 
 接下来连接我的项目。
 
@@ -107,6 +107,7 @@ Google Analytics Tracking ID：搜索引擎抓取关键字.
 	ssh-agent bash --login -i
 
 然后添加我们的私钥（前面生成的），输入下段命令
+
 	ssh-add d:/testC#/dll/git/web/rsa
 
 我的私钥放在了d:/testC#/dll/git/web/文件下，文件名为rsa
@@ -133,7 +134,7 @@ Google Analytics Tracking ID：搜索引擎抓取关键字.
 
 clone 后面的地址便是你刚刚copy的地址。
 
-这是你可以在你的当前路径下看到blog文件，里面的如下图：
+你可以在当前路径下看到blog文件里的内容，如下图：
 
 ![image](/image/create_repo/13.png )
 
@@ -157,125 +158,12 @@ clone 后面的地址便是你刚刚copy的地址。
 	git commit -am "first post"
 	git push
 
-然后进入博客[wsswdl.github.com/blog](http://wsswdl.github.com/blog ，大功告成！
+然后进入博客[wsswdl.github.com/blog](http://wsswdl.github.com/blog) ，大功告成！
 
 
 >注：本文章参考了[Flyher's NoteBook](http://www.cnblogs.com/flyher/p/3361140.html#tip4) ,[天壤的博客](http://blog.segmentfault.com/skyinlayer/1190000000406011)
 等博客，在此说明并加以感谢，如果不清楚的也可以访问这些博客。
 
 
-
-
-
-
-
-这是一个普通段落。
-
-<table>
-    <tr>
-        <td>Foo</td>
-    </tr>
-</table>
-
-这是另一个普通段落。
-
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-> 
-> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-> id sem consectetuer libero luctus adipiscing.
-
-
-
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.
-
-> This is the first level of quoting.
->
-> > This is nested blockquote.
->
-> Back to the first level.
-
-> ## 这是一个标题。
-> 
-> 1.   这是第一行列表项。
-> 2.   这是第二行列表项。
-> 
-> 给出一些例子代码：
-> 
->     return shell_exec("echo $input | $markdown_script");
-
--   Red
--   Green
--   Blue
-
-1.  Bird
-2.  McHale
-3.  Parish
-
-<ol>
-<li>Bird</li>
-<li>McHale</li>
-<li>Parish</li>
-</ol>
-
-*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-    viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-    Suspendisse id sem consectetuer libero luctus adipiscing.
-
-*   Bird
-*   Magic
-
-*   Bird
-
-*   Magic
-
-1.  This is a list item with two paragraphs. Lorem ipsum dolor
-    sit amet, consectetuer adipiscing elit. Aliquam hendrerit
-    mi posuere lectus.
-
-    Vestibulum enim wisi, viverra nec, fringilla in, laoreet
-    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
-    sit amet velit.
-
-2.  Suspendisse id sem consectetuer libero luctus adipiscing.
-
-I get 10 times more traffic from [Google] [1] than from
-[Yahoo] [2] or [MSN] [3].
-
-  [1]: http://google.com/        "Google"
-  [2]: http://search.yahoo.com/  "Yahoo Search"
-  [3]: http://search.msn.com/    "MSN Search"
-
-I get 10 times more traffic from [Google](http://google.com/ "Google")
-than from [Yahoo](http://search.yahoo.com/ "Yahoo Search") or
-[MSN](http://search.msn.com/ "MSN Search").
-
-*single asterisks*
-
-_single underscores_
-
-**double asterisks**
-
-__double underscores__
-
-Use the printf() function.
-Use the `printf()` function.
-A single backtick in a code span: `` ` ``
-
-A backtick-delimited string in a code span: `` `foo` ``
-
-Please don't use any `<blink>` tags.
-
-![image](/image/image.png "Optional title")
-
-![image](http://static.open-open.com/news/uploadImg/20140404/20140404213006_159.png "qqqqqqqqqqq")
 
 {% include references.md %}
