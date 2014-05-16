@@ -79,9 +79,10 @@ Google Analytics Tracking ID：搜索引擎抓取关键字.
 
 ####3.密钥设置##
 
-为了创建我们自己的博客，需要使用git更新我们的代码，所以打开安装成功的Git Bash（git的安装过程参见[git安装]（http://jingyan.baidu.com/article/90895e0fb3495f64ed6b0b50.html） ）。
+为了创建我们自己的博客，需要使用git更新我们的代码，所以打开安装成功的Git Bash（git的安装过程参见[git安装](http://jingyan.baidu.com/article/90895e0fb3495f64ed6b0b50.html) ）。
 创建SSH Keys，执行下句命令：
-    ssh-keygen -t rsa -C "邮箱"
+
+	ssh-keygen -t rsa -C "邮箱"
 
 “邮箱”输入你自己的邮箱比如 "xxxxxxxxx @gmail.com",然后会要你将密钥保存到一个路径，我将其保存到/d/testC#/dll/git/id_rsa(id_rsa为文件名),输入完整，会让你输入一个密码，输入即可。
 
@@ -102,20 +103,70 @@ Google Analytics Tracking ID：搜索引擎抓取关键字.
 接下来连接我的项目。
 
 首先输入下段命令登录
-    ssh-agent bash --login -i
+
+	ssh-agent bash --login -i
 
 然后添加我们的私钥（前面生成的），输入下段命令
-    ssh-add d:/testC#/dll/git/web/rsa
+	ssh-add d:/testC#/dll/git/web/rsa
 
 我的私钥放在了d:/testC#/dll/git/web/文件下，文件名为rsa
 
 最后运行
-    ssh -T git@github.com
+
+	ssh -T git@github.com
 
 提示：
+
 ![image](/image/create_repo/11.png )
 
 连接成功！
+
+####4.下载我的代码##
+
+进入自己创建的Repository中，并点击Copy按钮，如下图：
+
+![image](/image/create_repo/12.png )
+
+在git bash中进入想存放代码的路径下，然后执行语句：
+
+	git clone https://github.com/wsswdl/blog.git
+
+clone 后面的地址便是你刚刚copy的地址。
+
+这是你可以在你的当前路径下看到blog文件，里面的如下图：
+
+![image](/image/create_repo/13.png )
+
+
+####5.安装jekyll##
+
+什么是jekyll，使用jekyll的原因以及安装jekyll的过程参见[天壤的博客](http://blog.segmentfault.com/skyinlayer/1190000000406011) 。
+
+###6.修改自己的博客##
+
+新手自己做网页的前段会比较麻烦，而且效果也许不会很好，这里提供许多[jekyll模板](https://github.com/jekyll/jekyll/wiki/Sites), 选择
+一个自己喜欢的博客风格，采用第4步的方法，下载到自己的本地。
+
+将除了.git目录外，其他的所有文件复制到本地的blog文件下，修改里面的_config.yml文件。
+
+###7.上传代码，生成自己的博客##
+
+最后上传我们的代码，生成自己的博客，输入以下命令：
+
+	git add .
+	git commit -am "first post"
+	git push
+
+然后进入博客[wsswdl.github.com/blog](http://wsswdl.github.com/blog ，大功告成！
+
+
+>注：本文章参考了[Flyher's NoteBook](http://www.cnblogs.com/flyher/p/3361140.html#tip4) ,[天壤的博客](http://blog.segmentfault.com/skyinlayer/1190000000406011)
+等博客，在此说明并加以感谢，如果不清楚的也可以访问这些博客。
+
+
+
+
+
 
 
 这是一个普通段落。
