@@ -99,7 +99,23 @@ Google Analytics Tracking ID：搜索引擎抓取关键字.
 
 如果我们收到了邮件的验证通知，说明我们成功了，接下来连接到我们的项目。
 
+接下来连接我的项目。
 
+首先输入下段命令登录
+    ssh-agent bash --login -i
+
+然后添加我们的私钥（前面生成的），输入下段命令
+    ssh-add d:/testC#/dll/git/web/rsa
+
+我的私钥放在了d:/testC#/dll/git/web/文件下，文件名为rsa
+
+最后运行
+    ssh -T git@github.com
+
+提示：
+![image](/image/create_repo/11.png )
+
+连接成功！
 
 
 这是一个普通段落。
