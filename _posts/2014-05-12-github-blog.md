@@ -77,6 +77,29 @@ Google Analytics Tracking ID：搜索引擎抓取关键字.
 
 我们耐心的等待10分钟，然后便可以愉快的看看我们的个人博客了[wsswdl.github.com/blog](http://wsswdl.github.com/blog "wsswdl的个人博客")。
 
+####3.密钥设置##
+
+为了创建我们自己的博客，需要使用git更新我们的代码，所以打开安装成功的Git Bash（git的安装过程参见[git安装]（http://jingyan.baidu.com/article/90895e0fb3495f64ed6b0b50.html） ）。
+创建SSH Keys，执行下句命令：
+    ssh-keygen -t rsa -C "邮箱"
+
+“邮箱”输入你自己的邮箱比如 "xxxxxxxxx @gmail.com",然后会要你将密钥保存到一个路径，我将其保存到/d/testC#/dll/git/id_rsa(id_rsa为文件名),输入完整，会让你输入一个密码，输入即可。
+（PS:不知道什么是SSH Keys，普及一下：SSH keys 即 Secure Shell Keys，是为了防止任何人随意clone 或 push 代码而产生的. keys 有公匙和密匙,你在本地生成了密匙和公匙之后,把你的公匙告诉给服务器或者其他协作者,那么你就可以在他们的git版本库clone和push代码等操作.相对于一台服务器来说,一台协作者机器对应一个SSH keys.SSH有两种，一种基于口令，一种基于密钥。）
+
+![image](/image/create_repo/8.png )
+
+成功生成了我的密钥。
+
+![image](/image/create_repo/9.png )
+
+打开rsa.pub，将里面的东西复制出来，按照下图的步骤将密钥复制到ssh中。
+
+![image](/image/create_repo/10.png )
+
+如果我们收到了邮件的验证通知，说明我们成功了，接下来连接到我们的项目。
+
+
+
 
 这是一个普通段落。
 
