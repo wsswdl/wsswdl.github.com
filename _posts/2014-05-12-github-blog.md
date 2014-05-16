@@ -84,6 +84,7 @@ Google Analytics Tracking ID：搜索引擎抓取关键字.
     ssh-keygen -t rsa -C "邮箱"
 
 “邮箱”输入你自己的邮箱比如 "xxxxxxxxx @gmail.com",然后会要你将密钥保存到一个路径，我将其保存到/d/testC#/dll/git/id_rsa(id_rsa为文件名),输入完整，会让你输入一个密码，输入即可。
+
 （PS:不知道什么是SSH Keys，普及一下：SSH keys 即 Secure Shell Keys，是为了防止任何人随意clone 或 push 代码而产生的. keys 有公匙和密匙,你在本地生成了密匙和公匙之后,把你的公匙告诉给服务器或者其他协作者,那么你就可以在他们的git版本库clone和push代码等操作.相对于一台服务器来说,一台协作者机器对应一个SSH keys.SSH有两种，一种基于口令，一种基于密钥。）
 
 ![image](/image/create_repo/8.png )
