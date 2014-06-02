@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 淘米网实习生招聘总结
-category: zongjie
+category: ganxiang
 ---
 
 前段时间在院群里收到通知，[淘米网](http://www.61.com/ “淘米网”)要来进行实习生招聘，于是看了一下招聘的岗位，有后台开发岗位，而且要求也比较符合我的能力

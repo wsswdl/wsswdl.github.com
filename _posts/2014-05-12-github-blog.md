@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在github上搭建个人博客
-category: zongjie
+category: tansuo
 ---
 
 #文章内容
