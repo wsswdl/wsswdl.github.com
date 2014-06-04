@@ -6,6 +6,10 @@ category: tansuo
 
 >*策略模式：*它定义了算法家族，分别封装起来，让他们之间可以互相替换，此模式让算法的变化，不会影响到使用算法的用户。
 
+策略模式类图
+
+![image](/image/pattern_strategy/1.png )
+
 Strategy类定义所有支持算法的公用接口
 
 	//抽象算法类或者是接口
@@ -171,6 +175,7 @@ Context，用一个ConcreteStrategy来配置，维护一个队Strategy对象的�
 	}
 
 则测试类：
+
 	public class MiniDuckSimulator{
 		public static void Main(String[] args){
 			Duck mallard = new MallardDuck();
