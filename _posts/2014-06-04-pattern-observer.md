@@ -189,6 +189,7 @@ java API中有内置的观察者模式。java.util包内包含最基本的Observ
 	import java.util.Observer;
 	
 	public class CurrentConditionsDisplay implements Observer,DisplayElement{
+
 		Observable observable;
 		private float temperature;
 		private float humidity;
