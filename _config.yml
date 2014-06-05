@@ -13,7 +13,7 @@ custom:
         zongjie: 项目总结
         tansuo: 探索天地
         ganxiang: 感想
-	sheji: 设计模式
+        sheji: 设计模式
 
     categories:
       - name:  zongjie
