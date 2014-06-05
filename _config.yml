@@ -13,6 +13,7 @@ custom:
         zongjie: 项目总结
         tansuo: 探索天地
         ganxiang: 感想
+	sheji: 设计模式
 
     categories:
       - name:  zongjie
@@ -23,6 +24,9 @@ custom:
 
       - name: ganxiang
         title: 感想
+
+      - name: sheji
+        title: 设计模式
 
 
     scrollingLoadCount: 2                          # 滚屏自动加载文章数量，“0”为关闭
