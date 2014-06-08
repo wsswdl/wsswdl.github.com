@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 设计模式--观察者模式
-category: tansuo
+category: sheji
 ---
 
 ###1.观察者模式基本介绍###
