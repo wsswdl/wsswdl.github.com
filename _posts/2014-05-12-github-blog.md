@@ -4,7 +4,7 @@ title: 在github上搭建个人博客
 category: tansuo
 ---
 
-# 文章内容
+## 文章内容
 
 ### 1.注册git账号
 
