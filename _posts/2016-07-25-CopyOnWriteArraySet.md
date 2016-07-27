@@ -23,6 +23,7 @@ CopyOnWriteArraySet相当于线程安全的HashSet，在多线程的情况下可
 因为CopyOnWriteArraySet的底层是通过CopyOnWriteArrayList实现的，所以可以保证线程安全的原理是和CopyOnWriteArrayList一样的，不同的是CopyOnWriteArraySet集合需要保证元素的唯一性，所以每次在进行add()、set()等操作时都会先判断集合中是否已经存在此元素，然后再操作。
 
 ## 源码分析：
+
 #### 1.基本定义及初始化
 
     private final CopyOnWriteArrayList<E> al;
