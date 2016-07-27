@@ -14,7 +14,7 @@ custom:
         tansuo: 探索天地
         ganxiang: 感想
         sheji: 设计模式
-		juc: JUC包代码
+        juc: JUC包代码
 
     categories:
       - name:  zongjie
@@ -29,8 +29,8 @@ custom:
       - name: sheji
         title: 设计模式
 		
-	  - name: juc
-	    title: JUC包代码
+      - name: juc
+        title: JUC包代码
 
 
     scrollingLoadCount: 2                          # 滚屏自动加载文章数量，“0”为关闭
