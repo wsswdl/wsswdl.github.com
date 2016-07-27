@@ -15,6 +15,9 @@ CopyOnWriteArrayList 是可以在多线程下使用的list，相当于线程安�
 5. 使用迭代器进行遍历的速度很快，并且不会与其他线程发生冲突。在构造迭代器时，迭代器依赖于不变的数组快照。
 
 ## 原理：
+
+![image](/image/CopyOnWriteArrayList/1.jpg )
+
 1. 在add（），put（），remove（）等操作的时候，都需要加锁（ReetrantLock）,变更操作结束后才释放锁；
 2. 在add（），put（），remove（）等操作的时候，需要通过Arrays.copyOf（）方法将原先的数组全部复制一遍，然后加入或减去新的元素，最后再将新数组直接替换旧数组；
 3. 在使用iterator（）遍历的时候，遍历的是当时获取的数组快照，就算遍历期间有修改操作，也不会抛出异常；
