@@ -4,7 +4,7 @@ title: CopyOnWriteArrayList详解
 category: juc
 ---
 
-##介绍：
+## 介绍：
 CopyOnWriteArrayList 是可以在多线程下使用的list，相当于线程安全的ArrayList。
 
 ## 特点：
@@ -69,6 +69,7 @@ CopyOnWriteArrayList 是可以在多线程下使用的list，相当于线程安�
                 lock.unlock();
             }
         }
+
 说明 :每次添加时会获取独占锁，并上锁，通过Arrays.copyOf（）新生成一个数组，添加新元素后再通过setArray方法整体替换，最后解锁。
 
 #### 3.获取get（）：
@@ -113,6 +114,7 @@ CopyOnWriteArrayList 是可以在多线程下使用的list，相当于线程安�
             lock.unlock();
         }
     }
+
 Arrays.copyOf（）的底层就是通过System.arraycopy（）实现的。
 
 #### 5.遍历
