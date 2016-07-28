@@ -1,5 +1,10 @@
+highlighter: pygments
 markdown: kramdown
-pygments: true
+kramdown:
+  input:         GFM
+  auto_ids:      true
+  auto_id_prefix:'id-'
+# pygments: true
 safe: false
 permalink: /posts/:title.html
 exclude:
