@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="/assets/css/site.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/code/github.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/lrtk.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/syntax.css">
 {% for style in page.styles %}<link rel="stylesheet" type="text/css" href="{{ style }}" />
 {% endfor %}
 </head>

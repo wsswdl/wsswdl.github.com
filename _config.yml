@@ -1,9 +1,9 @@
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 kramdown:
   input:         GFM
-  auto_ids:      true
-  auto_id_prefix:'id-'
+  syntax_highlighter: rouge
+
 # pygments: true
 safe: false
 permalink: /posts/:title.html
