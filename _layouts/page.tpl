@@ -12,7 +12,6 @@
 <link rel="stylesheet" type="text/css" href="/assets/css/code/github.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/lrtk.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/syntax.css"> 
-<!--<link rel="stylesheet" href="/assets/css/styles/default.css"> -->
 <script src="/assets/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 {% for style in page.styles %}<link rel="stylesheet" type="text/css" href="{{ style }}" />
