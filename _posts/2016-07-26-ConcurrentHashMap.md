@@ -12,16 +12,16 @@ ConcurrentHashMap是线程安全的hashmap，在多线程的情况下使用Concu
 
 ## 特点：
 
-1.ConcurrentHashMap在发生冲突的时候和hashmap一样采用链地址法，可是ConcurrentHashMap又多了一种数据结构叫做Segment，每次线程访问的时候只锁其对应的segment，不用的segment可以并发执行。
-2.JDK8对hashmap和ConcurrentHashMap在底层实现上有个重大的改变：JDK8之前的版本在同一个hash值的链上采用的是链表的结构，这样的不好之处是如果某个hash值冲突特别严重的话，对此链上数据的查询就接近于O(n)，严重的降低了查询的效率，因此在JDK8开始，当链表的长度大于8时后续的存储采用了红黑树的数据结构，这样就算冲突严重，最差也是O(lgn)的查询时间复杂度。
+1. ConcurrentHashMap在发生冲突的时候和hashmap一样采用链地址法，可是ConcurrentHashMap又多了一种数据结构叫做Segment，每次线程访问的时候只锁其对应的segment，不用的segment可以并发执行。
+2. JDK8对hashmap和ConcurrentHashMap在底层实现上有个重大的改变：JDK8之前的版本在同一个hash值的链上采用的是链表的结构，这样的不好之处是如果某个hash值冲突特别严重的话，对此链上数据的查询就接近于O(n)，严重的降低了查询的效率，因此在JDK8开始，当链表的长度大于8时后续的存储采用了红黑树的数据结构，这样就算冲突严重，最差也是O(lgn)的查询时间复杂度。
 
 ## 原理：
 
 ConcurrentHashMap的类图：
-1.ConcurrentHashMap继承于AbstractMap抽象类。
-2.Segment是ConcurrentHashMap中的内部类，它就是ConcurrentHashMap中的“锁分段”对应的存储结构。ConcurrentHashMap与Segment是组合关系，1个ConcurrentHashMap对象包含若干个Segment对象。在代码中，这表现为ConcurrentHashMap类中存在“Segment数组”成员。
-3.Segment类继承于ReentrantLock类，所以Segment本质上是一个可重入的互斥锁。
-4.HashEntry也是ConcurrentHashMap的内部类，是单向链表节点，存储着key-value键值对。Segment与HashEntry是组合关系，Segment类中存在“HashEntry数组”成员，“HashEntry数组”中的每个HashEntry就是一个单向链表。
+1. ConcurrentHashMap继承于AbstractMap抽象类。
+2. Segment是ConcurrentHashMap中的内部类，它就是ConcurrentHashMap中的“锁分段”对应的存储结构。ConcurrentHashMap与Segment是组合关系，1个ConcurrentHashMap对象包含若干个Segment对象。在代码中，这表现为ConcurrentHashMap类中存在“Segment数组”成员。
+3. Segment类继承于ReentrantLock类，所以Segment本质上是一个可重入的互斥锁。
+4. HashEntry也是ConcurrentHashMap的内部类，是单向链表节点，存储着key-value键值对。Segment与HashEntry是组合关系，Segment类中存在“HashEntry数组”成员，“HashEntry数组”中的每个HashEntry就是一个单向链表。
  
 ## 源码分析：
 
@@ -70,9 +70,9 @@ ConcurrentHashMap的类图：
 ```
 
 说明：
-1.concurrencyLevel的作用就是用来计算segments数组的容量大小。先计算出“大于或等于concurrencyLevel的最小的2的N次方值”，然后将其保存为“segments的容量大小(ssize)”。
-2.initialCapacity是哈希表的初始容量。需要注意的是，哈希表的实际容量=“segments的容量” x “segments中数组的长度”。
-3.loadFactor是加载因子。它是哈希表在其容量自动增加之前可以达到多满的一种尺度。
+1. concurrencyLevel的作用就是用来计算segments数组的容量大小。先计算出“大于或等于concurrencyLevel的最小的2的N次方值”，然后将其保存为“segments的容量大小(ssize)”。
+2. initialCapacity是哈希表的初始容量。需要注意的是，哈希表的实际容量=“segments的容量” x “segments中数组的长度”。
+3. loadFactor是加载因子。它是哈希表在其容量自动增加之前可以达到多满的一种尺度。
 
 ConcurrentHashMap采用了“锁分段”技术，其通过Segment数据结构实现的，Segment定义如下：
 
@@ -98,8 +98,8 @@ ConcurrentHashMap采用了“锁分段”技术，其通过Segment数据结构�
 ```
 
 说明：
-1.Segment中又包含了HashEntry，HashEntry就是真正存储数据的结构，Segment只是用来分段；
-2.Segment继承了ReentrantLock，说明Segment本身也是一个可重入独占锁，保证并发下的线程安全。
+1. Segment中又包含了HashEntry，HashEntry就是真正存储数据的结构，Segment只是用来分段；
+2. Segment继承了ReentrantLock，说明Segment本身也是一个可重入独占锁，保证并发下的线程安全。
 
 HashEntry是真正存储数据的结构，HashEntry的源码如下：
 
@@ -146,8 +146,8 @@ HashEntry是真正存储数据的结构，HashEntry的源码如下：
 ```
 
 说明：
-1.put()根据key获取对应的哈希值，再根据哈希值找到对应的Segment片段。如果Segment片段不存在，则新增一个Segment。
-2.将key-value键值对添加到Segment片段中。
+1. put()根据key获取对应的哈希值，再根据哈希值找到对应的Segment片段。如果Segment片段不存在，则新增一个Segment。
+2. 将key-value键值对添加到Segment片段中。
 
 Segment的put方法如下：
 
@@ -211,10 +211,10 @@ Segment的put方法如下：
 ```
 
 说明：
-1.此put方法首先会通过tryLock()和scanAndLockForPut()方法获取锁；
-2.得到锁后查找到Segment里的HashEntry链，通过for循环来检查key是否已经存在在map中，如果，存在，则将value改变，然后直接返回，如果此key不在map中，将新的HashEntry节点插入到链上；
-3.插入到链上后会判断Segment容量是否超过阈值，超过的话则调用rehash()将容量扩充2倍；
-4.如果没超过，则调用setEntryAt()更新链表头，值得注意的是，链表的插入采用的头插法。
+1. 此put方法首先会通过tryLock()和scanAndLockForPut()方法获取锁；
+2. 得到锁后查找到Segment里的HashEntry链，通过for循环来检查key是否已经存在在map中，如果，存在，则将value改变，然后直接返回，如果此key不在map中，将新的HashEntry节点插入到链上；
+3. 插入到链上后会判断Segment容量是否超过阈值，超过的话则调用rehash()将容量扩充2倍；
+4. 如果没超过，则调用setEntryAt()更新链表头，值得注意的是，链表的插入采用的头插法。
 
 为了保证插入的正确性，每次都要获取锁后才能进行插入操作，scanAndLockForPut()方法比较有意思：
 
@@ -270,8 +270,8 @@ Segment的put方法如下：
 ```
 
 说明：
-1.此方法在试图获取锁时采用了“自旋锁”+“独占锁”的方式实现的；
-2.通过while(!tryLock)不断的轮询试图获取锁，如果次数超过最大值则调用lock()方法，lock()方法详情见ReetrantLock，大体的原理就是将此线程放到队列里进行排队，挂起，直到可以获取资源再被唤醒。
+1. 此方法在试图获取锁时采用了“自旋锁”+“独占锁”的方式实现的；
+2. 通过while(!tryLock)不断的轮询试图获取锁，如果次数超过最大值则调用lock()方法，lock()方法详情见ReetrantLock，大体的原理就是将此线程放到队列里进行排队，挂起，直到可以获取资源再被唤醒。
 
 #### 3.获取
 
