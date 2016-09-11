@@ -262,6 +262,7 @@ private Node<K,V> findPredecessor(Comparable<? super K> key) {
 }
 ```
 
+**说明：**从head节点开始查找，先向右查找，如果向右的节点为null或者key小于node.value时就向下查找，最后在level1中查找到key对应的前继节点。也就是说无论是put，remove还是get，最后都会查找到level1的链上，然后再操作。
 
 
 
